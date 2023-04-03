@@ -35,13 +35,17 @@ const PhoneBar = () => {
     }, [])
     console.log(phones);
     return (
-        <div>
+        <div className='mt-24'>
+            <h2 className='text-center font-bold text-4xl text-green-500'>This is BarChart</h2>
             <BarChart
                 width={1500}
                 height={400}
                 data={phones}
             >
                 <Bar dataKey="price" fill="#8884d8" />
+                <XAxis></XAxis>
+                <YAxis></YAxis>
+                <Tooltip></Tooltip>
             </BarChart>
 
         </div>
